@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   SocialCalendar AI
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="aurora">
+  </div>
+  <div aria-hidden="true" class="social-scene">
+   <svg class="network" preserveaspectratio="xMidYMid slice" viewbox="0 0 1200 800">
+    <g fill="none" stroke="#a78bfa" stroke-dasharray="5 12" stroke-opacity=".22">
+     <path d="M160 160 Q520 20 880 160 T1120 480 Q800 720 500 560 T160 160">
+     </path>
+     <path d="M160 160 Q400 420 880 160 M500 560 Q700 300 1120 480">
+     </path>
+    </g>
+   </svg>
+   <div class="float-tile instagram">
+    <svg viewbox="0 0 24 24">
+     <rect height="18" rx="5" width="18" x="3" y="3">
+     </rect>
+     <circle cx="12" cy="12" r="4">
+     </circle>
+     <path d="M17.5 6.5h.01">
+     </path>
+    </svg>
+    <span>
+     Instagram
+    </span>
+   </div>
+   <div class="float-tile video">
+    <svg viewbox="0 0 24 24">
+     <rect height="14" rx="4" width="20" x="2" y="5">
+     </rect>
+     <path d="m10 9 5 3-5 3z">
+     </path>
+    </svg>
+    <span>
+     Video content
+    </span>
+   </div>
+   <div class="float-tile linkedin">
+    <b>
+     in
+    </b>
+    <span>
+     LinkedIn
+    </span>
+   </div>
+   <div class="float-tile schedule">
+    <svg viewbox="0 0 24 24">
+     <rect height="16" rx="3" width="18" x="3" y="5">
+     </rect>
+     <path d="M7 2v6m10-6v6M3 10h18m-13 5 3 3 5-5">
+     </path>
+    </svg>
+    <span>
+     Content plan
+    </span>
+   </div>
+   <div class="float-tile engagement">
+    <svg viewbox="0 0 24 24">
+     <path d="M3 3v18h18M6 16l5-6 4 3 6-8">
+     </path>
+    </svg>
+    <span>
+     Engagement
+    </span>
+   </div>
+   <div class="float-tile caption-card">
+    <svg viewbox="0 0 24 24">
+     <path d="M4 4h16v13H9l-5 4zM8 8h8m-8 4h6">
+     </path>
+    </svg>
+    <span>
+     Creative captions
+    </span>
+   </div>
+   <div class="float-tile ai-card">
+    <svg viewbox="0 0 24 24">
+     <path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3z">
+     </path>
+    </svg>
+    <span>
+     AI ideas
+    </span>
+   </div>
+   <div class="float-tile hashtag">
+    <b>
+     #
+    </b>
+    <span>
+     Discover
+    </span>
+   </div>
+  </div>
+  <div class="cursor">
+  </div>
+  <aside>
+   <h2>
+    ◈ SocialCalendar
+    <em>
+     AI
+    </em>
+   </h2>
+   <small>
+    WORKSPACE
+   </small>
+   <nav id="nav">
+   </nav>
+   <footer>
+    Creative workspace
+    <br/>
+    <small>
+     Account workspace · v3.0
+    </small>
+   </footer>
+  </aside>
+  <main>
+   <header>
+    <span>
+     YOUR CREATIVE WORKSPACE
+    </span>
+    <button id="new">
+     ＋ New post
+    </button>
+   </header>
+   <section id="view">
+   </section>
+  </main>
+  <dialog id="editor">
+   <form id="postForm">
+    <h2>
+     Edit content
+    </h2>
+    <label>
+     Title
+     <input name="title" required=""/>
+    </label>
+    <label>
+     Date
+     <input name="date" required="" type="date"/>
+    </label>
+    <label>
+     Platform
+     <select name="platform">
+      <option>
+       Instagram
+      </option>
+      <option>
+       LinkedIn
+      </option>
+      <option>
+       Facebook
+      </option>
+      <option>
+       YouTube
+      </option>
+      <option>
+       X
+      </option>
+     </select>
+    </label>
+    <label>
+     Caption
+     <textarea name="caption" required=""></textarea>
+    </label>
+    <label>
+     Status
+     <select name="status">
+      <option>
+       Draft
+      </option>
+      <option>
+       Scheduled
+      </option>
+      <option>
+       Published
+      </option>
+     </select>
+    </label>
+    <div class="actions">
+     <button id="cancel" type="button">
+      Cancel
+     </button>
+     <button>
+      Save post
+     </button>
+    </div>
+   </form>
+  </dialog>
+  <script src="auth.js">
+  </script>
+ </body>
+</html>
